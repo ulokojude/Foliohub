@@ -26,12 +26,14 @@ The application is structured into three main layers:
 │  │ (React / Form Management)│  │ (Dynamic Templates)│  │
 │  └────────────┬─────────────┘  └─────────▲──────────┘  │
 └───────────────│──────────────────────────│─────────────┘
+
 │ API Requests             │ Fetch Data
 ▼                          │
 ┌──────────────────────────────────────────┴─────────────┐
 │                   Backend API Gateway                  │
 │       Express.js / Next.js API Routes (Middleware)     │
 └───────────────────────┬────────────────────────────────┘
+
 │ Read / Write
 ▼
 ┌────────────────────────────────────────────────────────┐
@@ -74,5 +76,5 @@ The core relational structure maps portfolios directly to their creators:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/dynamic-portfolio-builder.git](https://github.com/your-username/dynamic-portfolio-builder.git)
+   git clone [https://github.com/ulokojude/Foliohub.git](https://github.com/ulokojude/Foliohub.git)
    cd dynamic-portfolio-builder
