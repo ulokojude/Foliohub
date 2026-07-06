@@ -19,29 +19,24 @@ An open-source, multi-tenant SaaS platform that allows users to seamlessly creat
 
 The application is structured into three main layers:
 
-┌────────────────────────────────────────────────────────┐
-│                   Frontend (Client)                    │
-│  ┌──────────────────────────┐  ┌────────────────────┐  │
-│  │    Creator Dashboard     │  │ Public Portfolio   │  │
-│  │ (React / Form Management)│  │ (Dynamic Templates)│  │
-│  └────────────┬─────────────┘  └─────────▲──────────┘  │
-└───────────────│──────────────────────────│─────────────┘
+## 🏗️ Architecture Overview
 
-│ API Requests             │ Fetch Data
-▼                          │
-┌──────────────────────────────────────────┴─────────────┐
-│                   Backend API Gateway                  │
-│       Express.js / Next.js API Routes (Middleware)     │
-└───────────────────────┬────────────────────────────────┘
+The system operates as a single unified frontend communicating with a central backend API to handle both dynamic viewing and content management:
 
-│ Read / Write
-▼
-┌────────────────────────────────────────────────────────┐
-│                        Database                        │
-│                PostgreSQL / MongoDB                    │
-└────────────────────────────────────────────────────────┘
-
-
+FRONTEND (Client Layer)
+├── Creator Dashboard (React / Form Management)
+│   └── Sends Data ──► [ API Requests (POST/PUT) ] ──┐
+│                                                    │
+└── Public Portfolio (Dynamic Templates)              ▼
+    └── Receives Data ◄── [ Data Fetching (GET) ] ───┼─ BACKEND API GATEWAY
+                                                     │  (Express.js / Next.js Middleware)
+                                                     │
+                                                     ▼
+                                            [ Read / Write Queries ]
+                                                     │
+                                                     ▼
+                                             DATABASE LAYER
+                                             (PostgreSQL / MongoDB)
 ---
 
 ## 🛠️ Tech Stack
