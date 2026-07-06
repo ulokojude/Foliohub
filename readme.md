@@ -17,10 +17,6 @@ An open-source, multi-tenant SaaS platform that allows users to seamlessly creat
 
 ## 🏗️ Architecture Overview
 
-The application is structured into three main layers:
-
-## 🏗️ Architecture Overview
-
 The system operates as a single unified frontend communicating with a central backend API to handle both dynamic viewing and content management:
 
 clone repository to see the architect diagram clearly
@@ -73,5 +69,5 @@ The core relational structure maps portfolios directly to their creators:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/ulokojude/Foliohub.git](https://github.com/ulokojude/Foliohub.git)
+   git clone [https://github.com/ulokojude/Foliohub.git]
    cd Foliohub
