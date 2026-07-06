@@ -23,6 +23,8 @@ The application is structured into three main layers:
 
 The system operates as a single unified frontend communicating with a central backend API to handle both dynamic viewing and content management:
 
+clone repository to see the architect diagram clearly
+
 FRONTEND (Client Layer)
 ├── Creator Dashboard (React / Form Management)
 │   └── Sends Data ──► [ API Requests (POST/PUT) ] ──┐
