@@ -77,4 +77,4 @@ The core relational structure maps portfolios directly to their creators:
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/ulokojude/Foliohub.git](https://github.com/ulokojude/Foliohub.git)
-   cd dynamic-portfolio-builder
+   cd Foliohub
