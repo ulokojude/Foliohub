@@ -1,73 +1,47 @@
-# 🚀 Dynamic Portfolio Builder
+# 🚀 Foliohub: Dynamic Portfolio Engine
 
-An open-source, multi-tenant SaaS platform that allows users to seamlessly create, customize, and host their own dynamic, professional portfolio websites with zero coding required.
+An open-source, multi-tenant SaaS platform that decouples a developer's raw data from the presentation layer. Manage your professional credentials, links, and integration configurations in a central dashboard, and stream them dynamically into beautifully optimized layout templates.
 
----
-
-## 🌟 Features
-
-- **User Authentication:** Secure sign-up, login, and session management.
-- **Dynamic Portfolio Routing:** Portfolios are served instantly at `yourdomain.com/[username]` or `[username].yourdomain.com`.
-- **Interactive Dashboard:** An intuitive, form-driven creator engine to update profile details, work experience, projects, education, and social links in real time.
-- **Customizable Themes:** Switch between pre-designed templates and customize accent colors, layouts, and typography.
-- **SEO & Performance Optimized:** Fast page loads with optimized open-graph metadata for rich social sharing.
-- **Secure by Design:** Input sanitization to protect against XSS, and secure database indexing for rapid queries.
+💬 **Have feedback or want to request a feature?** Join our [Community Discussion Thread](https://github.com/ulokojude/Foliohub/discussions)!
 
 ---
 
-## 🏗️ Architecture Overview
+## 🌟 Key Features
 
-The system operates as a single unified frontend communicating with a central backend API to handle both dynamic viewing and content management:
-
-clone repository to see the architect diagram clearly
-
-FRONTEND (Client Layer)
-├── Creator Dashboard (React / Form Management)
-│   └── Sends Data ──► [ API Requests (POST/PUT) ] ──┐
-│                                                    │
-└── Public Portfolio (Dynamic Templates)              ▼
-    └── Receives Data ◄── [ Data Fetching (GET) ] ───┼─ BACKEND API GATEWAY
-                                                     │  (Express.js / Next.js Middleware)
-                                                     │
-                                                     ▼
-                                            [ Read / Write Queries ]
-                                                     │
-                                                     ▼
-                                             DATABASE LAYER
-                                             (PostgreSQL / MongoDB)
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React, Tailwind CSS, Lucide Icons, Axios
-- **Backend:** Node.js, Express.js (or Next.js API Routes)
-- **Database:** PostgreSQL (with Prisma ORM) or MongoDB (with Mongoose)
-- **Deployment:** Vercel / Netlify (Frontend), Render / Railway / Heroku (Backend)
+- **Multi-Tenant Routing:** Dynamic subdomain and custom apex domain mapping (`username.foliohub.dev`).
+- **Live Sandbox Customizer:** Form-driven workspace editor with a real-time mobile device viewport previewer.
+- **Telemetry Pipelines:** Background traffic telemetry hooks (e.g., Vercel edge functions logging visits directly to Google Sheets).
+- **Decoupled Architecture:** Content (projects, experience timelines, anchors) is fully managed independently of layout styles.
 
 ---
 
-## 🗄️ Database Schema
+## 🛠️ Tech Stack & Architecture
 
-The core relational structure maps portfolios directly to their creators:
+- **Frontend:** React, Tailwind CSS, Lucide Icons, Vite
+- **Data Layer:** Multi-tenant database mapping schemas (PostgreSQL / Prisma ORM)
+- **Runtime Nodes:** Vercel Edge functions for route orchestration, telemetry analytics, and rate limiting
 
-- **User Table:** `id`, `email`, `password_hash`, `username` (acts as the unique URL slug)
-- **Profile Table:** `id`, `user_id`, `full_name`, `title`, `bio`, `avatar_url`, `theme_color`
-- **Projects Table:** `id`, `user_id`, `title`, `description`, `link`, `image_url`
-- **Experience Table:** `id`, `user_id`, `company`, `role`, `start_date`, `end_date`, `description`
+---
+
+## 🛠️ Contributions Welcomed!
+
+Foliohub is open-source from day one, and we are actively looking for contributors! 
+
+* **Frontend Developers:** Build and compile new portfolio design layouts using React + Tailwind CSS.
+* **Backend Engineers:** Optimize multi-tenant database indexing, edge caching rules, and analytics pipelines.
+
+Jump into our [GitHub Discussions Space](https://github.com/ulokojude/Foliohub/discussions/2) to pitch feature ideas, claim upcoming issues, or collaborate with us!
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 - Node.js (v18.x or higher)
-- npm or yarn
-- A running PostgreSQL or MongoDB instance
+- npm, yarn, or pnpm
 
-### Installation & Local Setup
-
+### Local Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/ulokojude/Foliohub.git]
+   git clone [https://github.com/ulokojude/Foliohub.git](https://github.com/ulokojude/Foliohub.git)
    cd Foliohub
