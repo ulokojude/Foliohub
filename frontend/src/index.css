@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Fits perfectly into the standard src folder now */
+@source "./templates/**/*.jsx";
