@@ -43,5 +43,5 @@ Jump into our [GitHub Discussions Space](https://github.com/ulokojude/Foliohub/d
 ### Local Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/ulokojude/Foliohub.git](https://github.com/ulokojude/Foliohub.git)
+   git clone https://github.com/ulokojude/Foliohub.git
    cd Foliohub
