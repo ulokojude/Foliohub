@@ -15,7 +15,7 @@ export default function LandingPage({ onLaunchDashboard }) {
             <span className="font-bold tracking-tight text-white text-lg">Foliohub</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://github.com/ulokojude/foliohub-templates" target="_blank" rel="noreferrer" className="text-sm font-medium text-slate-400 hover:text-white transition inline-flex items-center gap-1.5">
+            <a href="https://github.com/ulokojude/foliohub" target="_blank" rel="noreferrer" className="text-sm font-medium text-slate-400 hover:text-white transition inline-flex items-center gap-1.5">
               {/* Old: <Github className="w-4 h-4" /> Open Source */}
               <GitFork className="w-4 h-4" /> Open Source
             </a>
@@ -54,11 +54,11 @@ export default function LandingPage({ onLaunchDashboard }) {
               onClick={onLaunchDashboard}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-medium rounded-xl transition shadow-lg shadow-emerald-950/30 cursor-pointer group"
             >
-              Launch Platform Core 
+              Launch
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition" />
             </button>
             <a 
-              href="https://github.com/ulokojude/foliohub-templates"
+              href="https://github.com/ulokojude/foliohub"
               target="_blank" rel="noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 rounded-xl transition"
             >
