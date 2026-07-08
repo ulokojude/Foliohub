@@ -2,7 +2,7 @@
 
 An open-source, multi-tenant SaaS platform that decouples a developer's raw data from the presentation layer. Manage your professional credentials, links, and integration configurations in a central dashboard, and stream them dynamically into beautifully optimized layout templates.
 
-💬 **Have feedback or want to request a feature?** Join our [Community Discussion Thread](https://github.com/ulokojude/Foliohub/discussions)!
+💬 **Have feedback or want to request a feature?** Join our [Community Discussion Thread](https://github.com/ulokojude/Foliohub/discussions/2)!
 
 ---
 
